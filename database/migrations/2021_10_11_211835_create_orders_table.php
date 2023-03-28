@@ -17,7 +17,7 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->string('name')->default('');
             $table->string('status')->default('В работе');
-            $table->mediumText('message')->default('');
+            $table->string('message')->default('');
             $table->timestamps();
         });
     }
